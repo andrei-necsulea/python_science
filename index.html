@@ -1,0 +1,270 @@
+<html>
+
+<title>Data Science for dummies</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body bgcolor = "black">
+
+    
+
+  <style>
+    /* Place the navbar at the top of the page, and make it stick */
+.navbar {
+
+background-color: #333;
+overflow: hidden;
+position: fixed;
+top : 0;
+width: 100%;
+display:inline-block; 
+}
+
+
+.a_img {
+float: left;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display:inline-block;
+
+}
+
+.navbar_a_text {
+float: left;
+color: darkgoldenrod;
+text-align: center;
+padding: 14px 16px;
+padding-top : 2%;
+text-decoration: none;
+font-size: 17px;
+display:inline-block;
+
+}
+
+/* Change the color of links on hover */
+.navbar_a_hover_text:hover {
+background-color:#FEBE10;
+color: black;
+padding-bottom:27px;
+}
+
+.navbar_a_hover_img {
+
+color: black;
+}
+
+/* Add a green background color to the active link */
+
+.navbar a.active {
+background-color: #04AA6D;
+color: white;
+
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+display: none;
+
+}
+
+.H3 {
+  padding-top : 20px ;
+  color : rgb(165, 189, 189) ;
+  margin-left : 12%;
+  margin-right : 12%;
+  
+}
+
+.H3_special{
+  color : rgb(165, 189, 189) ;
+  margin-left : 12%;
+  margin-right : 12%;
+
+}
+
+.H2 {
+ padding-top : 120px ;
+ color: rgb(40, 185, 185) ;
+ margin-left : 9%;
+ margin-right : 9%;
+}
+
+
+/*H2_special refers to the second h2 title which can not has any paddings in it*/
+
+.H2_special {
+ color: rgb(40, 185, 185) ;
+ margin-left : 9%;
+ margin-right : 9%;
+}
+
+.hover_of_active
+{
+padding-bottom:27px;
+background-color:darkolivegreen;
+display : block;
+
+}
+
+.step{
+ margin-left : 7%;
+ margin-right: 7%;
+}
+
+.step_text{
+  margin-left : 9%;
+  margin-right: 9%;
+}
+
+
+.logo-image{
+width: 46px;
+height: 46px;
+overflow: hidden;
+margin-top: 0px;
+}
+
+body{
+margin: 0;
+}
+
+.navbar .icon {
+display: none;
+
+}
+
+@media screen and (max-width: 850px) {
+.navbar a:not(:first-child) {display: none;}
+.navbar a.icon {
+float: right;
+display:block;
+margin-right:5%;
+margin-top:5%;
+
+}
+}
+
+@media screen and (max-width: 850px) {
+.navbar.responsive {position: relative;}
+.navbar.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.navbar.responsive a {
+float: none;
+display: block;
+text-align: left;
+
+}
+}
+
+
+
+.video {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  </style>
+
+
+
+<div class="navbar" id="myNavbar">
+<a class="logo-image a_img navbar_a_hover_img">
+
+        <img src="python.png">
+
+</a>
+<a href="blog.html" class = "navbar_a_text navbar_a_hover_text">Blog</a>
+<a href="index.html" class = "hover_of_active navbar_a_text ">Home</a>
+<a href="mpbtutorial.html" class = "navbar_a_text navbar_a_hover_text" >Matplotlib info</a>
+<a href="pandas.html" class = "navbar_a_text navbar_a_hover_text">Pandas info</a>
+<a href="languageOFfuture.html" class = "navbar_a_text navbar_a_hover_text">Python is Future ?</a>
+<a href="interpreter.html" class = "navbar_a_text navbar_a_hover_text">Interpreter</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars fa-2x" aria-hidden="true" style="color:white;"></i>
+</a>
+
+</div>
+
+
+<h2 class = "H2">        What is Python ?</h2>
+
+<h3 class = "H3">	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.<br><br>
+  <br>	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
+
+Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0 Python 2.0 was released in 2000 and introduced new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support. Python 3.0, released in 2008, was a major revision that is not completely backward-compatible with earlier versions. <br><br><br>Python 2 was discontinued with version 2.7.18 in 2020.
+
+<br>
+Python consistently ranks as one of the most popular programming languages.
+</h3>
+<br><br>
+<div class = "video">
+<iframe  width="560" height="315" src="https://www.youtube.com/embed/Y8Tko2YC5hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br><br>
+<h2 class = "H2_special">        How to install Python ?</h2>
+
+<h3 class = "H3">
+
+&nbsp;	&nbsp;	&nbsp;	 For Windows users :
+
+ &nbsp; &nbsp;	&nbsp; &nbsp;	&nbsp;	&nbsp; &nbsp;	&nbsp;
+ <p class = "step">Step 1 : </p> <p class = "step_text">Download python from the official site: <a href = "https://www.python.org/downloads/" >www.python.org</a> . I personally recommend to install version 3.10.4 because 
+          you can use all the improvments , security fixes and bugs-free. I have to mention that is mandatory to have at least Windows 10 to run this verison of python. However, you can choose
+         an older version of python, or make a virtual machine with Windows 10 and run python. Before go further , I reccomend you to mark "Add python to path"(<a href = "https://journaldev.nyc3.digitaloceanspaces.com/2019/06/customize_installation.png">More info here</a>) meanwhile the installation . This is for global system variables , which basically means that you want Windows recognize Python and let it run.(<a href = "https://www.digitalocean.com/community/tutorials/install-python-windows-10">All info here</a>) </p>
+ &nbsp; &nbsp;	&nbsp; &nbsp;	&nbsp;	&nbsp; &nbsp;	&nbsp;
+ <p class = "step">Step 2 : </p> <p class = "step_text">Download Visual Studio Code(<a href = "https://code.visualstudio.com/">Official Site here</a>). After installing it , you will need some extensions for running python. First one on the list is CodeRunner - run code in terminal(<a href = "https://py-vscode.readthedocs.io/en/latest/files/code-runner.html">Set instructions</a>). Second one is Python extension(<a href = "https://code.visualstudio.com/docs/python/python-tutorial">Official Site</a>).Then you restart the code editor and all the things will be set.</p>   
+
+ <br><br>
+
+ <p class = "step">It is very important to know that for every module you wanna use , you must install it manually in CMD(Command Prompt , without any administrator privilegies). Command for installing : "pip install <b style="color:green"> module</b>".</p>
+<br><br>
+<div class = "video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kn1HF3oD19c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br><br><br>
+&nbsp;	&nbsp;	&nbsp;	 For Ubuntu-Linux users :
+<p class = "step_text">In Ubuntu Linux you already have python installed . However , not in every version of ubuntu is up-to-date. If you want the latest version or an further one please check <a href="https://cloudbytes.dev/snippets/upgrade-python-to-latest-version-on-ubuntu-linux">www.cloudbytes.dev</a> . If you want to install some modules for your work , just open a terminal with "CTRL ALT+T" and then type the command from Windows section.</p>
+
+<br><br>
+<div class = "video">
+<iframe  width="560" height="315" src="https://www.youtube.com/embed/Br2xt6B57SA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br><br>
+
+</h3>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,435 @@
+<html>
+
+<title>BLOG Page</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+
+</head>
+
+
+<body bgcolor = "black" >
+
+  <style>
+
+    .navbar {
+    
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top : 0;
+    width: 100%;
+    display:inline-block; 
+    }
+    
+    
+    .a_img {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display:inline-block;
+    
+    }
+    
+    .navbar_a_text {
+    float: left;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 14px 16px;
+    padding-top : 2%;
+    text-decoration: none;
+    font-size: 17px;
+    display:inline-block;
+    
+    }
+    
+    /* Change the color of links on hover */
+    .navbar_a_hover_text:hover {
+    background-color:#FEBE10;
+    color: black;
+    padding-bottom:27px;
+    }
+    
+    .navbar_a_hover_img {
+    
+    color: black;
+    }
+    
+    /* Add a green background color to the active link */
+    
+    .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+    
+    }
+    
+    /* Hide the link that should open and close the navbar on small screens */
+    .navbar .icon {
+    display: none;
+    
+    }
+    
+    
+    .hover_of_active
+    {
+    padding-bottom:27px;
+    background-color:darkolivegreen;
+    display : block;
+    
+    }
+    
+    .step{
+     margin-left : 7%;
+     margin-right: 7%;
+    }
+    
+    .step_text{
+      margin-left : 9%;
+      margin-right: 9%;
+    }
+    
+    
+    .logo-image{
+    width: 46px;
+    height: 46px;
+    overflow: hidden;
+    margin-top: 0px;
+    }
+    
+    body{
+    margin: 0;
+    }
+    
+    .navbar .icon {
+    display: none;
+    }
+    
+    @media screen and (max-width: 850px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+    float: right;
+    display:block;
+    margin-right:5%;
+    margin-top:5%;
+    
+    }
+    }
+    
+    @media screen and (max-width: 850px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    
+    }
+    }
+    
+    .img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+
+ *:not(.logo-image) {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  
+  background-color: #333;
+}
+
+/* Header/Blog Title */
+
+
+.header{
+  margin-top : 2em;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+  background: black;
+
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: black;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #aaa;
+  margin-top: 20px;
+}
+
+h3 , h2:not(.footer_dv_h2){
+  color: rgb(40, 185, 185) ;
+}
+
+
+
+h5{
+  color : white;
+  font-size: larger;
+}
+
+p{
+  color : white;
+}
+
+div a p{
+  font-size: larger;
+}
+
+div p{
+  font-size: larger;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height : 30%;
+}
+
+@keyframes  opacity_title{
+     0% {opacity: 0%;}
+     5% {opacity: 5%;}
+     10% {opacity: 10%;}
+     15% {opacity: 15%;}
+     20%{opacity: 20%;}
+     25%{opacity: 25%;}
+     30%{opacity: 30%;}
+     35%{opacity: 35%;}
+     40%{opacity: 40%;}
+     45%{opacity: 45%;}
+     50%{opacity: 50%;}
+     55%{opacity: 55%;}
+     60%{opacity: 60%;}
+     65%{opacity: 65%;}
+     70%{opacity: 70%;}
+     75%{opacity: 75%;}
+     80%{opacity: 80%;}
+     85%{opacity: 85%;}
+     90%{opacity: 90%;}
+     95%{opacity: 95%;}
+     100%{opacity : 100%;}
+
+ } 
+
+
+ @keyframes blinking {
+  from, to { color: transparent; }
+  50% { color: white; }
+}
+
+
+.div_h2_p{
+  color: #04AA6D;
+   display: inline-block;
+   justify-content: center;
+   
+   animation-name: opacity_title ; 
+   animation-duration: 8s;
+   animation-delay: 0.05s;
+
+}
+
+
+div h2 p b {
+  animation: blinking .75s step-end infinite; 
+  
+}
+
+
+/* Responsive layout - when the screen is less than 850px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 850px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+
+
+.header{
+  margin-top : 2em;
+  padding: 40px;
+  font-size: 20px;
+  text-align: center;
+  background: black;
+
+}
+
+}
+
+
+    </style>
+
+  <div class="navbar" id="myNavbar">
+    <a class="logo-image a_img navbar_a_hover_img">
+    
+            <img src="python.png">
+    
+    </a>
+    <a href="blog.html" class = "hover_of_active navbar_a_text ">Blog</a>
+    <a href="index.html" class = "navbar_a_text navbar_a_hover_text">Home</a>
+    <a href="mpbtutorial.html" class = "navbar_a_text navbar_a_hover_text" >Matplotlib info</a>
+    <a href="pandas.html" class = "navbar_a_text navbar_a_hover_text">Pandas info</a>
+    <a href="languageOFfuture.html" class = "navbar_a_text navbar_a_hover_text">Python is Future ?</a>
+    <a href="interpreter.html" class = "navbar_a_text navbar_a_hover_text">Interpreter</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars fa-2x" aria-hidden="true" style="color:white;"></i>
+    </a>
+    </div>
+
+
+
+<div>
+    <div class="header">
+      <h2><p class="div_h2_p" style="color: blueviolet; display: inline-block;">print</p><p class="div_h2_p">("</p><i>PythonScience</i><p class="div_h2_p">")</p><p class="div_h2_p" style="color : white;"><b>|</b></p></h2>
+    </div>
+    
+    <div class="row">
+      <div class="leftcolumn">
+
+       
+        <div class="card">
+          <h2>BLOG - INTRO</h2>
+          <h5>NEWS , Dec 28 , 2022</h5>
+          <div style="border-style: solid; border-color: coral;"><img   class="img" src="intro.png"></div>
+          <p>What is this BLOG for ? <br>Well , you have to smash "Read More" button if you wanna discover key to deep ways of Python!!! </p>
+         <a style="text-decoration: none;" href="intro.html"><p style="color: darkgoldenrod;">Read More</p></a>
+        </div>
+      
+
+        <div class="card">
+          <h2>FastAlyze Project</h2>
+          <h5>News , Dec 28 , 2022</h5>
+          <div style="background-color:rgb(217, 217, 217) ;"><img  style = "height : 30%; width : 30%; " class="img" src="fastalyze_logo.jpeg"></div>
+          <p>FastAlyze is a soul project(charts & visualization data app based mainly on matplotlib modulle) which I've started in 2021. Unfortunately , even now is not done. The state of the project is 50% ... Basically , I've made the GUI and some functions for the charts. Server side and database is not even started because of my lack of exprience on this side ! Hope to find someone to collaborate with.  </p>
+          <a style="text-decoration: none;" href="fastalyze.html"><p style="color: darkgoldenrod;">Read More</p></a>
+        </div>    
+
+
+        <div class="card">
+          <h2>AUTOMATION EXAMPLE - EXCEL FORM</h2>
+          <h5>Example Project , Dec 28 , 2022</h5>
+          <div><img  class="img" src="auto_py.png"></div>
+          <p>Example of automation in python using <b>xlsxwritter</b> module for editing xlsx files. <b>Tkinter</b> is used for GUI(graphical user interface) , the interaction between user and app(basically what you see). Another module used is <b>tkcalendar</b> which alows us to set dinamically what date we want.</p>
+         <a style="text-decoration: none;" href="auto_ex.html"><p style="color: darkgoldenrod;">Read More</p></a>
+        </div>
+
+        <div class="card">
+          <h2>Importance of &nbsp; <b>TKINTER</b></h2>
+          <h5>BLOG , Dec 28 , 2022</h5>
+          <div><img  class="img" src="tkinter_imp.png"></div>
+          <p>What should you think about tkinter module ? It is mandatory if you wanna break into the GUI and make desktop apps with python. Of coure , we have multiple GUI modules where to choose from ... However TKINTER is the easiest one and even computer passionate children can learn it !!! <br>Smash "Read More" button to understand how it works !!!</p>
+          <a style="text-decoration: none;" href="importance_of_tkinter.html"><p style="color: darkgoldenrod;">Read More</p></a>
+        </div>
+
+      </div>
+
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height:100px;"><b>WHO AM I ???</b></div>
+          <br>
+          <p>Andrei Necsulea</p>
+          <br>
+          <p>Passionate Ammateur about Python and it's tools</p>
+          <br>
+          <p>Freelancer Web Designer</p>
+          <br>
+          <p>CONTACT : necsulea.andrei.2004@gmail.com</p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg"><a></a>Intro to my BLOG</div><br>
+          <div class="fakeimg"><a></a>AUTOMATION EXAMPLE - EXCEL FORM</div><br>
+          <div class="fakeimg"><a>Importance of TKINTER</a></div>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>If you wanna glow up your day , my blog is the solution !!</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <h2 class="footer_dv_h2">SMILE !!!  IT'S FREE !!!</h2>
+    </div>
+    
+</div>
+
+
+
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+      </script>
+
+
+</body>
+
+
+</html>
